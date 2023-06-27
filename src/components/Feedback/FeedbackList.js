@@ -22,7 +22,7 @@ export default function FeedbackList() {
                 <div className='row'>
                     {feedback_context.feedbacks.map((item) => {
                         return (
-                            <div className='col-3' key={item.id}>
+                            <div className='col-lg-3 col-md-4 cd-sm-12' key={item.id}>
                                 <Feedback feedback={item} />
                             </div>
                         );

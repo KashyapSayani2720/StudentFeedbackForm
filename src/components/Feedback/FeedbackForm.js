@@ -24,22 +24,21 @@ export default function FeedbackForm() {
     if (result) {
       navigate("/");
       toast.success('Feedback Saved Successfully.');
-    }
-    else{
+    } else {
       toast.error('Failed To Save Feedback.');
     }
   };
 
   return (
-    <div className="container mt-4 bg-info rounded-circle">
+    <div className="container bg-info" style={{borderRadius:"50px 0px 50px 0px"}}>
       <div className="row">
         <div className="col-12">
           <h3 className="text-center mb-4 text-white mt-4" style={{ fontFamily: 'cursive' }}>Student Feedback Form</h3>
         </div>
       </div>
-      <div className="row text-center">
-        <div className="col-2"></div>
-        <div className="col-8">
+      <div className="row">
+        <div className="col-sm-2"></div>
+        <div className="col-sm-8">
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="branch_name" className="text-white text" style={{ fontFamily: 'cursive' }}>
@@ -84,12 +83,14 @@ export default function FeedbackForm() {
                 required
               />
             </div>
-            <button type="submit" className="btn btn-success m-3" style={{ fontFamily: 'cursive' }}>
-              Submit
-            </button>
+            <div className="d-flex justify-content-center">
+              <button type="submit" className="btn btn-success m-3" style={{ fontFamily: 'cursive' }}>
+                Submit
+              </button>
+            </div>
           </form>
         </div>
-        <div className="col-2"></div>
+        <div className="col-sm-2"></div>
       </div>
     </div>
   );

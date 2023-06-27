@@ -7,7 +7,9 @@ function FeedbackFormPage() {
     <>
       <Navbar/>
       <FeedbackProvider> 
+        <div className='m-3'>
         <FeedbackForm/>
+        </div>
       </FeedbackProvider>
     </>
   );

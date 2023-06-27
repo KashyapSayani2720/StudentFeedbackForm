@@ -20,7 +20,7 @@ export default function Feedback(props) {
   };
 
   return (
-    <div className="card m-3" style={{ minHeight: '12rem', maxWidth: '12rem' }}>
+    <div className="card m-3">
       <div className="card-header d-flex justify-content-between align-items-center">
         <span style={{ fontFamily: 'cursive' }}>{branch_name}</span>
         <button className="btn btn-sm btn-outline-danger" onClick={handleDelete}>
